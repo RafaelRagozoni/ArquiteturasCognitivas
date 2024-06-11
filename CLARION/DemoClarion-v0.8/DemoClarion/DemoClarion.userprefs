@@ -1,0 +1,35 @@
+﻿<Properties StartupItem="ClarionApp/ClarionApp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClarionApp/MainClass.cs">
+    <Files>
+      <File FileName="ClarionApp/ClarionAgent.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/WSProxy.cs" Line="26" Column="28" />
+      <File FileName="ClarionApp/MainClass.cs" Line="26" Column="8" />
+      <File FileName="ClarionApp/MindViewer.cs" Line="7" Column="33" />
+      <File FileName="ClarionApp/Model/Creature.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Model/Leaflet.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Model/LeafletItem.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Model/Material3d.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Model/Sack.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Model/Thing.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Exceptions/WorldServerConnectionError.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Exceptions/WorldServerErrorProcessingResponse.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Exceptions/WorldServerInvalidArgument.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Exceptions/WorldServerReadError.cs" Line="1" Column="1" />
+      <File FileName="ClarionApp/Exceptions/WorldServerSendError.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="DemoClarion" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/gtk-gui/ClarionSimulation.Mind.cs" line="9" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

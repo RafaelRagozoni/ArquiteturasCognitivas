@@ -1,0 +1,11 @@
+/app/folder1/obj/Debug/net481/folder1.csproj.AssemblyReference.cache
+/app/folder1/obj/Debug/net481/folder1.AssemblyInfoInputs.cache
+/app/folder1/obj/Debug/net481/folder1.AssemblyInfo.cs
+/app/folder1/obj/Debug/net481/folder1.csproj.CoreCompileInputs.cache
+/app/folder1/bin/Debug/net481/folder1.exe.config
+/app/folder1/bin/Debug/net481/folder1.exe
+/app/folder1/bin/Debug/net481/folder1.pdb
+/app/folder1/bin/Debug/net481/ClarionLibrary.dll
+/app/folder1/obj/Debug/net481/folder1.csproj.CopyComplete
+/app/folder1/obj/Debug/net481/folder1.exe
+/app/folder1/obj/Debug/net481/folder1.pdb

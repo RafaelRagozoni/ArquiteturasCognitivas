@@ -1,0 +1,705 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Clarion.Framework.Core Namespace</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="Clarion.Framework.Core namespace" />
+    <meta name="Microsoft.Help.F1" content="Clarion.Framework.Core" />
+    <meta name="Microsoft.Help.Id" content="N:Clarion.Framework.Core" />
+    <meta name="Description" content="This namespace contains the necessary constructs for the core operation of a CLARION agent." />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="Clarion.Framework.Core" />
+    <meta name="file" content="D8618F04" />
+    <meta name="guid" content="D8618F04" />
+    <xml>
+      <MSHelp:Attr Name="AssetID" Value="N:Clarion.Framework.Core" />
+      <MSHelp:TOCTitle Title="Clarion.Framework.Core Namespace" />
+      <MSHelp:RLTitle Title="Clarion.Framework.Core Namespace ()" />
+      <MSHelp:Keyword Index="A" Term="N:Clarion.Framework.Core" />
+      <MSHelp:Keyword Index="A" Term="frlrfClarionFrameworkCore" />
+      <MSHelp:Keyword Index="K" Term="Clarion.Framework.Core namespace" />
+      <MSHelp:Keyword Index="F" Term="Clarion.Framework.Core" />
+      <MSHelp:Attr Name="HelpPriority" Value="1" />
+      <MSHelp:Attr Name="DevLang" Value="CSharp" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="Abstract" Value="This namespace contains the necessary constructs for the core operation of a CLARION agent. While most of the constructs within this namespace are accessible (to an extent), you should rarely need to access this namespace in order to initialize or ru ..." />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="CSharpCheckbox">C#</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">Clarion Library 6.1.1</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Clarion.Framework.Core Namespace</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <span id="headfeedbackarea" class="feedbackhead">
+              <a href="javascript:SubmitFeedback('clarion.support@gmail.com','Clarion Library 6.1.1','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <div class="summary">This namespace contains the necessary constructs for the core operation of a CLARION agent. While most of the constructs within this namespace are accessible (to an extent), you should rarely need to access this namespace in order to initialize or run an agent.</div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(classToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(classToggle, event)" tabindex="0">
+            <img id="classToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Classes</span>
+        </h1>
+        <div id="classSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Class</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3AA17BFC.htm">ActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="230A1391.htm">ActionChunk<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C8F39FF3.htm">ActionChunkCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="323401C6.htm">ActivationTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="EF8076C6.htm">Chunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9EC0F429.htm">Chunk<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="67160CC3.htm">ChunkCollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="49F005B1.htm">ChunkTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4E209D84.htm">ClarionComponent</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for the internal (i.e., functional) components (e.g., implicit-decision networks, action rules, associative rules, etc.) 
+            in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6D9512BA.htm">ClarionComponent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ClarionComponentParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for component classes that derive from <a href="4E209D84.htm">ClarionComponent</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F4281BA5.htm">ClarionComponentCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="CF46C7B1.htm">ConditionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="704408DF.htm">DeclarativeChunkCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="ED55E4DE.htm">DimensionValueCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7C34AEA1.htm">DriveCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="45316F9E.htm">DriveStrengthsUpdatedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="67F75035.htm">EncodeEpisodeRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="2B9FA882.htm">EpisodicMemory</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="16A7ACAB.htm">ExternalActionRecommendedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="344242F4.htm">GenerativeContentDefinition</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="86FCF871.htm">GenerativeContentDefinition<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>L, R<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="86FBF871.htm">GenerativeContentDefinition<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>L, M, R<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7254ADB5.htm">GoalChunkCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="65F75254.htm">GoalChunkTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="E435289C.htm">GoalStructureUpdatedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="B2619426.htm">GoalStructureUpdateRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="552576D4.htm">ImplicitComponentCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="367DE42B.htm">LearningRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4E492D5E.htm">LearningTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A0F9C894.htm">LocalEpisodicMemoryTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6C15146C.htm">ParameterChangeRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3DE5292F.htm">ParameterTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="23BAC9C9.htm">PerceivedSensoryInformationModifiedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DD96E744.htm">ReasoningCompletedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C73E6122.htm">ReasoningRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="EB7FA8E5.htm">RetrieveCompletedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3DFB1C1E.htm">RetrieveRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A66E2FB6.htm">Rule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all rule types (e.g., <a href="CB358F97.htm">action rules</a>, <a href="B8CDD475.htm">associative rules</a>, etc.)
+            in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D811774D.htm">Rule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for rule classes that derive from <a href="A66E2FB6.htm">Rule</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="84209B8A.htm">RuleCollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="257C894A.htm">SemanticLabel</a>
+              </td>
+              <td>
+                <div class="summary">
+            Implements a semantic label in Clarion.
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A3BAA7DC.htm">SensoryInformationPerceivedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="80D34ABE.htm">TimedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6D3E7805.htm">TimeStamp</a>
+              </td>
+              <td>
+                <div class="summary">
+            Implements a time stamp in Clarion.
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="89EE79AA.htm">TimeStampCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="8AD35A0B.htm">TimingHoldRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="72E51973.htm">V</a>
+              </td>
+              <td>
+                <div class="summary">
+            Acts as a wrapper for <a href="http://msdn2.microsoft.com/en-us/library/ey2t2ys5" target="_blank">IComparable</a> values
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="8F006FD.htm">WorkingMemoryUpdatedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="E83F027.htm">WorkingMemoryUpdateRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(interfaceToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(interfaceToggle, event)" tabindex="0">
+            <img id="interfaceToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Interfaces</span>
+        </h1>
+        <div id="interfaceSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Interface</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="B4EB88B3.htm">ICommitable</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface acts as the foundation for all of the "functional" objects in the Clarion Library, initialized using the <a href="98C54519.htm">AgentInitializer</a></div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="52FBFE96.htm">IKillable</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="3EC3A6EC.htm">IWorldObject</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface acts as the foundation for all of the "descriptive" objects in the Clarion Library, stored
+            in the <a href="B2FF6357.htm">World</a> singleton object
+            </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(enumerationToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(enumerationToggle, event)" tabindex="0">
+            <img id="enumerationToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Enumerations</span>
+        </h1>
+        <div id="enumerationSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Enumeration</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="266E2DD7.htm">EpisodicMemory<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognizedActions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="5F024B2C.htm">GenerativeContentDefinition<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ValueOptions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="8CC2982E.htm">Rule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>IGOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The options that can be used when calculating information gain for IG(C,ALL).
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="409DD429.htm">TimedEventArgs<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>Timings</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+        <p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:clarion.support%40gmail.com?Subject=Clarion Library 6.1.1">clarion.support@gmail.com</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />© (2013) Nicholas Wilson</div>
+    </div>
+  </body>
+</html>

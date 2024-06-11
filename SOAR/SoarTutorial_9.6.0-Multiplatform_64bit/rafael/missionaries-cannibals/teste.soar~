@@ -1,0 +1,6 @@
+sp {missionaries-cannibals*elaborate*substate
+   (state <s> ^name missionaries-cannibals)
+   (<so> ^name missionaries-cannibals)
+-->
+   (<s> ^teste o)
+}

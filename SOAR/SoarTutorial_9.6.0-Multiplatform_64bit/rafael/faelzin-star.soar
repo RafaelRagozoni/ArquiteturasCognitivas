@@ -1,0 +1,82 @@
+
+sp {initialize*state*directions
+   (state <ss> ^type state)
+   -->
+   (<ss> ^directions <n> <e> <s> <w>)  
+   (<n> ^value north ^opposite south)
+   (<e> ^value east  ^opposite west)
+   (<s> ^value south ^opposite north)
+   (<w> ^value west  ^opposite east)}
+
+sp {propose*move*no-backward
+   (state <s> ^io.input-link.my-location.<dir>.content { <co> <> wall }
+              ^directions <d>
+             -^last-direction <o-dir>)
+   (<d> ^value <dir>
+        ^opposite <o-dir>)
+-->
+   (<s> ^operator <o> +, =)
+   (<o> ^name move
+        ^direction <dir>
+        ^content <co>)} 
+
+sp {apply*move
+   (state <s> ^io.output-link <ol>
+              ^operator <o>)
+   (<o> ^name move
+        ^direction <dir>)
+-->
+   (write | | <dir>)
+   (<ol> ^move.direction <dir>)}
+
+sp {apply*move*remove-move
+   (state <s> ^io.output-link <ol>
+              ^operator.name move)
+   (<ol> ^move <direction>)
+   (<direction> ^status complete)
+-->
+   (<ol> ^move <direction> -)}
+
+sp {apply*move*create*last-direction
+   (state <s> ^operator <o>)
+   (<o> ^name move
+        ^direction <direction>)
+-->
+   (<s> ^last-direction <direction>)}
+
+sp {apply*move*remove*last-direction
+   (state <s> ^operator <o>
+              ^last-direction <direction>)
+   (<o> ^direction <> <direction>
+  	 ^name move)
+-->
+   (<s> ^last-direction <direction> -)}
+
+sp {select*move*bonusfood-better-than-normalfood-empty
+   (state <s> ^operator <o1> +
+              ^operator <o2> +)
+   (<o1> ^name move 
+         ^content bonusfood)
+   (<o2> ^name move 
+         ^content << normalfood empty >>)
+-->
+   (<s> ^operator <o1> > <o2>)}
+
+sp {select*move*avoid-empty-eater
+   (state <s> ^operator <o1> +)
+   (<o1> ^name move 
+         ^content << empty eater >>)
+-->
+   (<s> ^operator <o1> <)}
+
+sp {select*move*reject*backward
+   (state <s> ^operator <o> +
+              ^directions <d>
+              ^last-direction <dir>)
+   (<d> ^value <dir>
+        ^opposite <o-dir>)
+   (<o> ^name move
+        ^direction <o-dir>)
+-->
+   (write | Reject | <o-dir>)
+   (<s> ^operator <o> -)} 

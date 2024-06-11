@@ -1,0 +1,17 @@
+sp {propose*move-forward
+   (state <s> ^io <io>)
+   (<io> ^input-link <il>)
+   (<il> ^blocked <blocked>)
+   (<blocked> ^forward no)
+-->
+   (state <s> ^operator <o>)
+   (<o> ^name move-forward)}
+   
+sp {apply*move-forward
+   (state <s> ^operator.name move-forward
+              ^io.output-link <ol>)
+-->
+   (<ol> ^move.direction forward)
+}
+   
+  

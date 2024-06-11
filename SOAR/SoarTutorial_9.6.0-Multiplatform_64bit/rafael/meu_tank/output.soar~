@@ -1,0 +1,20 @@
+sp {meu_tank*elaborate*state
+   (state <s> ^operator <op>
+              ^io.output-link <out>)
+   (<o> ^name <nome>)
+   (<o> ^actions <action>)
+   (<action> ^<att1> <value>)
+   (<value> ^<att2> <value2>)
+-->
+   (write (crlf) | Propose | <nome> |,| <value2>)
+   (<out> ^<att1> <value3>)
+   (<value3> ^<att2> <value2>)
+}
+
+sp {meu_tank*remove*command
+   (state <s> ^operator.actions
+              ^io.output-link <ol>)
+   (<ol> ^<att> <value>)
+   (<value> ^status complete)
+-->
+   (<ol> ^<att> <value> -)}

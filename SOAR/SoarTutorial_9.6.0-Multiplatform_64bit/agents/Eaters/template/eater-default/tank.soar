@@ -1,0 +1,15 @@
+sp {tank
+   (state <t> ^type tank)
+   (<t> ^blocked <blocked>)
+   
+   (<blocked> 
+        ^backward yes/no
+        ^forward yes/no
+        ^left yes/no
+        ^right yes/no)
+   (<incoming> 
+        ^backward yes/no
+        ^forward yes/no
+        ^left yes/no
+        ^right yes/no)
+   

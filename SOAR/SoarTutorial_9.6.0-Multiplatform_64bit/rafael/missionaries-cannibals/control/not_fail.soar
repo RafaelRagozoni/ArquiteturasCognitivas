@@ -1,0 +1,22 @@
+sp {mac*select*operator*avoid*inverse*not*failure*1
+   (state <s> ^name mac
+              ^operator <o> +
+             -^failure true
+              ^last-operator <lo>)
+   (<o> ^types 1
+        ^<type> <number>)
+   (<lo> ^types 1
+         ^type <type>
+         ^number <number>)
+-->
+   (<s> ^operator <o> < )}
+
+sp {mac*select*operator*avoid*inverse*not*failure*2
+   (state <s> ^name mac
+              ^operator <o> +
+             -^failure true
+              ^last-operator <lo>)
+   (<o> ^types 2)
+   (<lo> ^types 2)
+-->
+   (<s> ^operator <o> < )}

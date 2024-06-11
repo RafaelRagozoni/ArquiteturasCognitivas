@@ -1,0 +1,24 @@
+sp {mac*apply*move-mac-boat*record*last-operator*types*1
+   (state <s> ^name mac
+              ^operator <o>)
+   (<o> ^name move-mac-boat
+        ^bank <bank>
+        ^{ << missionaries cannibals >> <type> } <n>
+        ^types 1)
+-->
+   (<s> ^last-operator <o1>)
+   (<o1> ^types 1
+         ^bank <bank>
+         ^type <type>
+         ^number <n>)}
+
+sp {mac*apply*move-mac-boat*record*last-operator*types*2
+   (state <s> ^name mac
+              ^operator <o>)
+   (<o> ^name move-mac-boat
+        ^bank <bank>
+        ^types 2)
+-->
+   (<s> ^last-operator <o1>)
+   (<o1> ^types 2
+         ^bank <bank>)}

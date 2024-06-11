@@ -1,0 +1,1093 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>World Methods</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="World class, methods" />
+    <meta name="Microsoft.Help.Id" content="Methods.T:Clarion.World" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="Clarion" />
+    <meta name="file" content="E76F5055" />
+    <meta name="guid" content="E76F5055" />
+    <xml>
+      <MSHelp:Attr Name="AssetID" Value="Methods.T:Clarion.World" />
+      <MSHelp:TOCTitle Title="World Methods" />
+      <MSHelp:RLTitle Title="World Methods (Clarion)" />
+      <MSHelp:Keyword Index="A" Term="Methods.T:Clarion.World" />
+      <MSHelp:Keyword Index="A" Term="frlrfClarionWorldMethodsTopic" />
+      <MSHelp:Keyword Index="K" Term="World class, methods" />
+      <MSHelp:Attr Name="DevLang" Value="CSharp" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="AssemblyVersion" Value="6.1.1.0" />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+            <span>    </span>
+            <span id="memberOptionsDropdown" class="filter" tabindex="0">
+              <img id="memberOptionsDropdownImage" src="../icons/dropdown.gif" /> <label id="memberOptionsMenuAllLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Show All </nobr></label><label id="memberOptionsMenuMultipleLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label><label id="memberOptionsMenuProtectedLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label><label id="memberOptionsMenuInheritedLabel" for="memberOptionsDropdownImage" style="display: none;"><nobr>Members: Filtered </nobr></label></span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="CSharpCheckbox">C#</label>
+        <br />
+      </div>
+      <div id="memberOptionsMenu">
+        <input id="ProtectedCheckbox" type="checkbox" data="Protected" value="on" onClick="SetMemberOptions(this, 'vis')" />
+        <label class="checkboxLabel" for="ProtectedCheckbox">Include Protected Members</label>
+        <br />
+        <input id="InheritedCheckbox" type="checkbox" data="Inherited" value="on" onClick="SetMemberOptions(this, 'decl')" />
+        <label class="checkboxLabel" for="InheritedCheckbox">Include Inherited Members</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">Clarion Library 6.1.1</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">World Methods</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="B2FF6357.htm">World Class</a> <a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">See Also</a> <span id="headfeedbackarea" class="feedbackhead"><a href="javascript:SubmitFeedback('clarion.support@gmail.com','Clarion Library 6.1.1','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a></span></td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <p>The <a href="B2FF6357.htm">World</a> type exposes the following members.</p>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(methodTableToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(methodTableToggle, event)" tabindex="0">
+            <img id="methodTableToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Methods</span>
+        </h1>
+        <div id="methodTableSection" class="section" name="collapseableSection" style="">
+          <table id="memberList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+               
+            </th>
+              <th class="nameColumn">Name</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="5F02311F.htm">Contains(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Returns whether or not the world contains a World object with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="801711F9.htm">Contains(IWorldObject)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Returns whether or not the world contains the specified World object.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="38CF72BD.htm">Destroy</a>
+              </td>
+              <td>
+                <div class="summary">
+            Destroys the current singleton instance of the world class
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="E9BD41B1.htm">GetActionChunk(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the action chunk with the specified world ID. If the action chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="9BFA7394.htm">GetActionChunk(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets an action chunk with the specified label. If an action chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7BFA8FB0.htm">GetActionChunks<span class="languageSpecificText"><span class="cs">()</span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all action chunks in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="57AD059.htm">GetActionChunks(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world with the specified label.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="E2D769A0.htm">GetActionChunksContainingDV(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world that contain the dimension-value pair with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="5C4B04E8.htm">GetActionChunksContainingDV(DimensionValuePair)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world that contain the specified dimension-value pair.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="E2D7699F.htm">GetActionChunksContainingDV(Object, IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world that contain the dimension-value pair with the specified
+            dimension and value IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="FF246972.htm">GetActionChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>Guid<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world that contain all of the dimension-value pairs with the specified world IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="EB8004E8.htm">GetActionChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DimensionValuePair<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the action chunks in the world that contain all of the specified dimension-value pairs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="E24E23A9.htm">GetAgent(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the agent with the specified world ID. If the agent cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="889B338B.htm">GetAgent(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets an agent with the specified name. If an agent cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7C43BE28.htm">GetAgentMetaInfo(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of the meta info for the agent with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7AD1E1AE.htm">GetAgentMetaInfo(Agent)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of the meta info for the specified agent.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7C42BE28.htm">GetAgentMetaInfo(Guid, Agent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>InternalWorldObjectContainers)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of the meta info for the specified container in the agent with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7C40BE28.htm">GetAgentMetaInfo(Agent, Agent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>InternalWorldObjectContainers)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of the meta info for the specified container in the specified agent.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="886A3377.htm">GetAgents<span class="languageSpecificText"><span class="cs">()</span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all agents in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="AE0D733E.htm">GetAgents(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the agents in the world with the specified name.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="80872942.htm">GetDeclarativeChunk(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the declarative chunk with the specified world ID. If the declarative chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="475C8B25.htm">GetDeclarativeChunk(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a declarative chunk with the specified label. If a declarative chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="DA882942.htm">GetDeclarativeChunks<span class="languageSpecificText"><span class="cs">()</span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all declarative chunks in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="86378AD3.htm">GetDeclarativeChunks(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world with the specified label.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="50BECEED.htm">GetDeclarativeChunksContainingDV(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world that contain the dimension-value pair with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1E1D181A.htm">GetDeclarativeChunksContainingDV(DimensionValuePair)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world that contain the specified dimension-value pair.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="50BFCEED.htm">GetDeclarativeChunksContainingDV(Object, IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world that contain the dimension-value pair with the specified
+            dimension and value IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="21CA09A9.htm">GetDeclarativeChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>Guid<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world that contain all of the dimension-value pairs with the specified world IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="508DCF01.htm">GetDeclarativeChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DimensionValuePair<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the declarative chunks in the world that contain all of the specified dimension-value pairs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7A4E355D.htm">GetDimension</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all the dimension-value pairs with the specified dimension ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="68448ED3.htm">GetDimensionValuePair</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the dimension-value pair with the specified world ID. If the dimension-value pair cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="10ABB79B.htm">GetDimensionValuePair<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>dType, vType<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the dimension-value pair with the specified dimension and value IDs. If the dimension-value pair cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="68578ED3.htm">GetDimensionValuePairs</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all dimension-value pairs in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="D39CAE9D.htm">GetDimensionWorldIDs</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of the world IDs for all the dimension-value pairs with the specified dimension ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7834D3F2.htm">GetGoalChunk(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the goal chunk with the specified world ID. If the goal chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="ECE1BFFD.htm">GetGoalChunk(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a goal chunk with the specified label. If a goal chunk cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="ECF2BFD9.htm">GetGoalChunks<span class="languageSpecificText"><span class="cs">()</span><span class="cpp">()</span><span class="nu">()</span><span class="fs">()</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all goal chunks in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="B8BF4613.htm">GetGoalChunks(IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world with the specified label.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4A48FDE4.htm">GetGoalChunksContainingDV(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world that contain the dimension-value pair with the specified world ID.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="791FB66C.htm">GetGoalChunksContainingDV(DimensionValuePair)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world that contain the specified dimension-value pair.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="ECF0727F.htm">GetGoalChunksContainingDV(Object, IComparable)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world that contain the dimension-value pair with the specified
+            dimension and value IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="5CFAFF66.htm">GetGoalChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>Guid<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world that contain all of the dimension-value pairs with the specified world IDs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="78CEB66C.htm">GetGoalChunksContainingDVs(ICollection<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>DimensionValuePair<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span>)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all of the goal chunks in the world that contain all of the specified dimension-value pairs.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="85821E96.htm">GetTimeStamp(Guid)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the time stamp with the specified world ID. If the time stamp cannot be found,
+            this method returns <span class="code">-1</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="C0EDF55.htm">GetTimeStamp(Int64)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the time stamp with the specified long integer value. If the time stamp cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1F41950C.htm">GetWorldObject</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets the World object with the specified world ID. If the World object cannot be found,
+            this method returns <span class="code">null</span>.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4F620178.htm">GetWorldObjects</a>
+              </td>
+              <td>
+                <div class="summary">
+            Gets a thread-safe "read-only" list of all objects in the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="3400EF03.htm">Initialize</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new instance of the world singleton
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="300702FD.htm">NewAgent</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new agent. Also, if the optional name is specified (and is not <span class="code">null</span>), then this method also 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified name (if one does not already exist for it) and adds it to the declarative
+            chunk representation of the agent.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="3EEDB790.htm">NewCustomMetaCognitiveActionChunk<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new custom meta-cognitive action chunk (of type T). Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="B3F48F0.htm">NewDeclarativeChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new declarative chunk with the specified label. This method also generates a <a href="257C894A.htm">SemanticLabel</a> object for
+            the specified label (if one does not already exist for it) and adds it to the declarative chunk (unless otherwise specified).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="428CFF81.htm">NewDimensionValuePair<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>dType, vType<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new dimension-value pair with the specified dimension and value IDs. If a dimension-value pair already exists with the
+            specified dimension and value IDs, this method will return that dimension-value pair instead.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="AD06553.htm">NewDistributedDimensionValuePair<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="fs">&lt;'</span><span class="nu">(</span></span>vType<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="fs">&gt;</span><span class="nu">)</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new distributed dimension-value pair for the specified agent using the specified value ID. If a distributed dimension-value pair 
+            already exists for the specified agent with the specified value ID, this method will return that distributed dimension-value pair instead.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4FC4637B.htm">NewExternalActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new external action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="7D09A016.htm">NewGoalChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new goal chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="B213C706.htm">NewGoalStructureUpdateActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new goal structure update action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="BD03F103.htm">NewParameterChangeActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new parameter change action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="DD5A60B5.htm">NewReasoningRequestActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new NACS reasoning action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="67F77B45.htm">NewRetrieveRequestActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new NACS retrieve action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="62D0416E.htm">NewSensoryInformation(Agent, World<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SensoryInformationIncrementOptions)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new sensory information object for the specified agent using the specified time stamp increment option.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="4AC69F3F.htm">NewSensoryInformation(Agent, Int64)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new sensory information object for the specified agent at the specified time stamp.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="A1FFE9C5.htm">NewSensoryInformation(Agent, SensoryInformation, World<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SensoryInformationIncrementOptions)</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new sensory information object for the specified agent and sets up the generated sensory information object to match
+            the configuration of the specified sensory information object.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="2A40BCF4.htm">NewWorkingMemoryUpdateActionChunk</a>
+              </td>
+              <td>
+                <div class="summary">
+            Initializes a new working memory update action chunk. Also, if the optional label is specified (and is not <span class="code">null</span>), then this method 
+            generates a <a href="257C894A.htm">SemanticLabel</a> object for the specified label (if one does not already exist for it) and adds it to the action chunk 
+            (unless otherwise indicated).
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="C495CF25.htm">Remove</a>
+              </td>
+              <td>
+                <div class="summary">
+            Removes the specified World object from the world.
+            </div>
+              </td>
+            </tr>
+            <tr data="public;static;declared;notNetfw;">
+              <td>
+                <img src="../icons/pubmethod.gif" alt="Public method" title="Public method" />
+                <img src="../icons/static.gif" alt="Static member" title="Static member" />
+              </td>
+              <td>
+                <a href="1FA3152E.htm">ToString</a>
+              </td>
+              <td>
+                <div class="summary">
+            Returns a string that represents the world.
+            </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)" tabindex="0">
+            <img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />See Also</span>
+        </h1>
+        <div id="seeAlsoSection" class="section" name="collapseableSection" style="">
+          <div class="seeAlsoStyle">
+            <a href="B2FF6357.htm">World Class</a>
+          </div>
+          <div class="seeAlsoStyle">
+            <a href="E06C8524.htm">Clarion Namespace</a>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+        <p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:clarion.support%40gmail.com?Subject=Clarion Library 6.1.1">clarion.support@gmail.com</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />© (2013) Nicholas Wilson</div>
+    </div>
+  </body>
+</html>

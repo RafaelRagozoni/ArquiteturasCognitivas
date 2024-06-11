@@ -1,0 +1,7 @@
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/obj/x86/Release/ClarionApp.gtk-gui.gui.stetic
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/bin/Release/ClarionApp.exe.mdb
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/bin/Release/ClarionApp.exe
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/obj/x86/Release/ClarionApp.exe
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/obj/x86/Release/ClarionApp.exe.mdb
+/home/rgudwin/Local/Cursos/IA941/DemoClarion/ClarionApp/bin/Release/ClarionLibrary.dll

@@ -1,0 +1,11 @@
+VERSION 4
+/teste-1/teste-1.dm
+0	ROOT teste-1 teste-1 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR top-state top-state.soar 6
+6	0	OPERATOR initialize-teste-1 initialize-teste-1.soar 7
+7	0	OPERATOR placeholder placeholder.soar 8
+END

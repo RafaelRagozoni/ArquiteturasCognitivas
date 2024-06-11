@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C103EE32-51CA-49DA-94AD-999A10BB4308}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ClarionApp</RootNamespace>
+    <AssemblyName>ClarionApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>0.8</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="ClarionAgent.cs" />
+    <Compile Include="Exceptions\WorldServerConnectionError.cs" />
+    <Compile Include="Exceptions\WorldServerErrorProcessingResponse.cs" />
+    <Compile Include="Exceptions\WorldServerInvalidArgument.cs" />
+    <Compile Include="Exceptions\WorldServerReadError.cs" />
+    <Compile Include="Exceptions\WorldServerSendError.cs" />
+    <Compile Include="Model\Creature.cs" />
+    <Compile Include="Model\Leaflet.cs" />
+    <Compile Include="Model\LeafletItem.cs" />
+    <Compile Include="Model\Material3d.cs" />
+    <Compile Include="Model\Sack.cs" />
+    <Compile Include="Model\Thing.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="WSProxy.cs" />
+    <Compile Include="MindViewer.cs" />
+    <Compile Include="gtk-gui\ClarionApp.MindViewer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ClarionLibrary">
+      <HintPath>..\lib\ClarionLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+VERSION 4
+/meu_tank/meu_tank.dm
+0	ROOT meu_tank meu_tank 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR top-state top-state.soar 6
+6	0	OPERATOR initialize-meu_tank initialize-meu_tank.soar 7
+7	0	OPERATOR output output.soar 9
+8	0	HLOPERATOR wander wander.soar wander 51 12
+9	8	FOPERATOR elaborations elaborations.soar 14
+10	8	OPERATOR move move.soar 15
+11	8	OPERATOR turn turn.soar 11
+END

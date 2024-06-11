@@ -1,0 +1,14 @@
+sp {initialize-missionaries-cannibals*elaborate*substate
+   (state <s> ^name missionaries-cannibals)
+   (<s> -^esq)
+-->
+   (<s> ^representation <rep>)
+   (<rep> ^esq <esq>
+          ^dir <dir>)
+   (<esq> ^M 3
+          ^C 3
+          ^B 1)
+   (<dir> ^M 0
+          ^C 0
+          ^B 0)
+}

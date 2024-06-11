@@ -1,0 +1,1041 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Clarion.Framework.Templates Namespace</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="Clarion.Framework.Templates namespace" />
+    <meta name="Microsoft.Help.F1" content="Clarion.Framework.Templates" />
+    <meta name="Microsoft.Help.Id" content="N:Clarion.Framework.Templates" />
+    <meta name="Description" content="This namespace contains abstract classes, interfaces, and delegates that act as &quot;templates&quot; to aid in building custom user-defined agent internals (e.g., implicit components, drives, etc." />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="Clarion.Framework.Templates" />
+    <meta name="file" content="5CEA9B8" />
+    <meta name="guid" content="5CEA9B8" />
+    <xml>
+      <MSHelp:Attr Name="AssetID" Value="N:Clarion.Framework.Templates" />
+      <MSHelp:TOCTitle Title="Clarion.Framework.Templates Namespace" />
+      <MSHelp:RLTitle Title="Clarion.Framework.Templates Namespace ()" />
+      <MSHelp:Keyword Index="A" Term="N:Clarion.Framework.Templates" />
+      <MSHelp:Keyword Index="A" Term="frlrfClarionFrameworkTemplates" />
+      <MSHelp:Keyword Index="K" Term="Clarion.Framework.Templates namespace" />
+      <MSHelp:Keyword Index="F" Term="Clarion.Framework.Templates" />
+      <MSHelp:Attr Name="HelpPriority" Value="1" />
+      <MSHelp:Attr Name="DevLang" Value="CSharp" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="Abstract" Value="This namespace contains abstract classes, interfaces, and delegates that act as &quot;templates&quot; to aid in building custom user-defined agent internals (e.g., implicit components, drives, etc.) Details on how to define your own custom components can be f ..." />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="CSharpCheckbox">C#</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">Clarion Library 6.1.1</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Clarion.Framework.Templates Namespace</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <span id="headfeedbackarea" class="feedbackhead">
+              <a href="javascript:SubmitFeedback('clarion.support@gmail.com','Clarion Library 6.1.1','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <div class="summary">This namespace contains abstract classes, interfaces, and delegates that act as "templates" to aid in building custom user-defined agent internals (e.g., implicit components, drives, etc.)
+<p>Details on how to define your own custom components can be found in the "Advanced Customization Tutorial" located in the "Tutorials" folder of the CLARION Library package</p></div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(classToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(classToggle, event)" tabindex="0">
+            <img id="classToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Classes</span>
+        </h1>
+        <div id="classSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Class</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="CB358F97.htm">ActionRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all action rules (e.g., <a href="4123A3CE.htm">RefineableActionRule</a>, <a href="25CFA9E7.htm">IRLRule</a>, <a href="12588789.htm">FixedRule</a>) in
+            the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D599BA27.htm">ActionRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ActionRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for action rule classes that derive from <a href="CB358F97.htm">ActionRule</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="B8CDD475.htm">AssociativeRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all associative rules (e.g., <a href="AB25ED59.htm">RefineableAssociativeRule</a>) in
+            the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BDFB2A71.htm">AssociativeRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AssociativeRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for associative rule classes that derive from <a href="B8CDD475.htm">AssociativeRule</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3CBBA1C7.htm">CustomMetaCognitiveActionChunk<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D2D038A6.htm">Drive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for the drives in the in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="E2D30078.htm">Drive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for drive classes that derive from <a href="D2D038A6.htm">Drive</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="8517C6FC.htm">ImplicitComponent</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all implicit components (e.g., <a href="ADC69C2F.htm">BPNetwork</a>, <a href="3951969.htm">SimplifiedQBPNetwork</a>, <a href="DCCC3B9D.htm">QBPNetwork</a>, etc.) in
+            the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7D4E73AA.htm">ImplicitComponent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ImplicitComponentParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for implicit component classes that derive from <a href="8517C6FC.htm">ImplicitComponent</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DB5EC8BD.htm">MetaCognitiveModule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all meta-cognitive modules (e.g., <a href="73BD74F5.htm">GoalSelectionModule</a>, 
+            <a href="5044C3E4.htm">ParameterSettingModule</a>) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="34320A68.htm">MetaCognitiveModule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>MetaCognitiveModuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is parameters class for the <a href="DB5EC8BD.htm">MetaCognitiveModule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="137D6562.htm">NeuralNetwork</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for a 3-layer neural network (e.g., <a href="ADC69C2F.htm">BPNetwork</a>, <a href="3951969.htm">SimplifiedQBPNetwork</a>, <a href="DCCC3B9D.htm">QBPNetwork</a>, etc.) 
+            in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="B0796EE3.htm">NeuralNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>NeuralNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for neural network classes that derive from <a href="137D6562.htm">NeuralNetwork</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4C65E074.htm">NewExternalActionChosenEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="744A1307.htm">PublicationTimingsSpecifiedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="51E61630.htm">PublicationTimingsSpecifiedEventArgs<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>TimingSpecificationTuple</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="1A9B0FF6.htm">PublisherAvailableEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6FC4F8AE.htm">PublisherRemovedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="33034ADB.htm">RefineableActionRule<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all refineable action rules (e.g., <a href="4123A3CE.htm">RefineableActionRule</a>, <a href="25CFA9E7.htm">IRLRule</a>) in
+            the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="641FD25.htm">RefineableActionRule<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span><span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RefineableActionRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class the <a href="4123A3CE.htm">RefineableActionRule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DBBB1A0.htm">RefineableAssociativeRule<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all refineable associative rules (e.g., <a href="AB25ED59.htm">RefineableAssociativeRule</a>) in
+            the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="53B57563.htm">RefineableAssociativeRule<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span><span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RefineableAssociativeRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class the <a href="AB25ED59.htm">RefineableAssociativeRule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3B23028D.htm">ReinforcementTrainableBPNetwork</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for a reinforcement-trainable backpropagation network (e.g., <a href="3951969.htm">SimplifiedQBPNetwork</a>, <a href="DCCC3B9D.htm">QBPNetwork</a>) 
+            in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9B9E2D59.htm">ReinforcementTrainableBPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ReinforcementTrainableBPNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for reinforcement-trainable backpropagation network classes that derive from <a href="3B23028D.htm">ReinforcementTrainableBPNetwork</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="86013B14.htm">ReinforcementTrainableImplicitComponent</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all <a href="7E7C10D2.htm">reinforcement-trainable</a>implicit components in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="1BFD64E3.htm">ReinforcementTrainableImplicitComponent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ReinforcementTrainableImplicitComponentParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for reinforcement-trainable implicit component classes that derive from <a href="86013B14.htm">ReinforcementTrainableImplicitComponent</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A78AED7B.htm">SubscribeRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="B2A5552A.htm">TrainableImplicitComponent</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class serves as the base template class for all <a href="62060FAE.htm">trainable</a>implicit components 
+            (e.g., <a href="ADC69C2F.htm">BPNetwork</a>, <a href="3951969.htm">SimplifiedQBPNetwork</a>, <a href="DCCC3B9D.htm">QBPNetwork</a>, etc.) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="53067EF4.htm">TrainableImplicitComponent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>TrainableImplicitComponentParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the base parameters class for trainable implicit component classes that derive from <a href="B2A5552A.htm">TrainableImplicitComponent</a></div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="FA530FFF.htm">UnsubscribeRequestedEventArgs</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(interfaceToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(interfaceToggle, event)" tabindex="0">
+            <img id="interfaceToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Interfaces</span>
+        </h1>
+        <div id="interfaceSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Interface</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="E397B398.htm">IActionRuleFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="CAA6A355.htm">IAssociativeRuleFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="C31AFA.htm">IAutoEncoder</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object can be used as an "auto encoder"
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="47671298.htm">IDefinesAgentMetaInfo</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="F7482E7E.htm">IDeletable</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object can be deleted
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="E9593089.htm">IDriveFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="D2F10924.htm">IExtractsRules</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object can be used from which to extract rule
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="7D98B1EF.htm">IHandlesNewInput</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object handles new input
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="73F90230.htm">IimplicitComponentFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="38815599.htm">IMetaCognitiveModuleFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="FF5FABBA.htm">IPublishes</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="30B65951.htm">IPublishes<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>E<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="9DE78D3C.htm">IRefineable<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that a rule can be refined
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="7E7C10D2.htm">IReinforcementTrainable</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object is trainable using reinforcement learning
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="4E8DA4C2.htm">IRuleFactory<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="7C78050F.htm">ISubscribes</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="7572310C.htm">ISubscribes<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>E<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="1E0E0EB5.htm">ITracksMatchStatistics</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object tracks positive and negative match statistics
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="62060FAE.htm">ITrainable</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object is trainable
+            </div>
+              </td>
+            </tr>
+            <tr data="interface; public">
+              <td>
+                <img src="../icons/pubinterface.gif" alt="Public interface" title="Public interface" />
+              </td>
+              <td>
+                <a href="EA1228DF.htm">IUsesQLearning</a>
+              </td>
+              <td>
+                <div class="summary">
+            This interface specifies that an object is trainable using Q-learning
+            </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(delegateToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(delegateToggle, event)" tabindex="0">
+            <img id="delegateToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Delegates</span>
+        </h1>
+        <div id="delegateSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Delegate</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="40AB0571.htm">ChunkStrengthCalculator</a>
+              </td>
+              <td>
+                <div class="summary">
+            Calculates the strength of a chunk given the current input
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="A28B7790.htm">ChunkWeightCalculator</a>
+              </td>
+              <td>
+                <div class="summary">
+            Calculates the weight for the specified dimension within the chunk
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="A0F72DB3.htm">CoversDeterminer</a>
+              </td>
+              <td>
+                <div class="summary">
+            Determines if a rule covers another rule
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="DEBA7DA8.htm">DeficitChangeProcessor</a>
+              </td>
+              <td>
+                <div class="summary">
+            Changes the deficit of the specified drive based on the current input
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="F146F564.htm">DeletionChecker</a>
+              </td>
+              <td>
+                <div class="summary">
+            Checks if the target <a href="F7482E7E.htm">IDeletable</a> object should be deleted
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="685A7C89.htm">EligibilityChecker</a>
+              </td>
+              <td>
+                <div class="summary">
+            Checks to see if a <a href="4E209D84.htm">ClarionComponent</a> object is eligible to be used
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="494A36CE.htm">EqualityDeterminer</a>
+              </td>
+              <td>
+                <div class="summary">
+            Determines if two rules are equal to each other
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="D3BA0278.htm">ExtractionChecker</a>
+              </td>
+              <td>
+                <div class="summary">
+            Checks to see if the <a href="D2F10924.htm">IExtractsRules</a> object should extract a rule based on the information specified
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="6D502F42.htm">InputFilterer</a>
+              </td>
+              <td>
+                <div class="summary">
+            Filters the specified input
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="7356AF9E.htm">KnowledgeFilterer</a>
+              </td>
+              <td>
+                <div class="summary">
+            Filters the specified collection of <a href="49F005B1.htm">ChunkTuple</a> objects 
+            (typically returned by the NACS when reasoning or knowledge retrieval is performed)
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="CFCB239F.htm">PositiveMatchDeterminer</a>
+              </td>
+              <td>
+                <div class="summary">
+            Determines whether to increment the positive match statistics based on the information specified
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="17CC46AF.htm">ResponseTimeVariabilityCalculator</a>
+              </td>
+              <td>
+                <div class="summary">
+            Calculates (and applies) the variability for either the perception time or actuation time
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="FFC89B92.htm">RuleExtractor<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Performs rule extraction given the specified information
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="62A9C5F2.htm">RuleGeneralizer<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Performs rule generalization given the specified information
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="3FC3C0CC.htm">RuleSpecializer<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>T<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Performs rule specialization given the specified information
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="456A0C9A.htm">SupportCalculator</a>
+              </td>
+              <td>
+                <div class="summary">
+            Calculates the support for a rule given the current input
+            </div>
+              </td>
+            </tr>
+            <tr data="delegate; public">
+              <td>
+                <img src="../icons/pubdelegate.gif" alt="Public delegate" title="Public delegate" />
+              </td>
+              <td>
+                <a href="6201454F.htm">UtilityCalculator</a>
+              </td>
+              <td>
+                <div class="summary">
+            Calculates the utility for a rule
+            </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(enumerationToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(enumerationToggle, event)" tabindex="0">
+            <img id="enumerationToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Enumerations</span>
+        </h1>
+        <div id="enumerationSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Enumeration</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="83EFD6E7.htm">ActionRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SelectionTypes</a>
+              </td>
+              <td>
+                <div class="summary">
+            The types of measures that can be used for rule selection when performing action decision making
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="D1B8B8E0.htm">ActionRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>UtilityOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The options for calculating the utility of a rule
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="696E3998.htm">Drive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>MetaInfoReservations</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="66FD0BF4.htm">MetaCognitiveModule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>Internals</a>
+              </td>
+              <td>
+                <div class="summary">
+            Indicates the "internals containers" that are available for a meta-cognitive module
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="17DCB0A.htm">MetaCognitiveModule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>OperationOptions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="33ED4C6A.htm">MetaCognitiveModule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>OutcomeActivationOptions</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+        <p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:clarion.support%40gmail.com?Subject=Clarion Library 6.1.1">clarion.support@gmail.com</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />© (2013) Nicholas Wilson</div>
+    </div>
+  </body>
+</html>

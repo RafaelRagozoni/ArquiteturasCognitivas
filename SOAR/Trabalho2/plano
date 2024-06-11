@@ -1,0 +1,33 @@
+1 - entender o mundo
+2 - armazenar a posição das joias
+3 - escolher o leaflet mais valioso
+4 - trocar leaflet escolhido
+
+(substate1)
+ver se é possível compor um leaflet c as joias conhecidas
+
+(substate2)
+coletar as joias necessárias pro melhor leaflet
+
+(substate3)
+coletar as comidas mais proximas
+
+---------------------------------------------------------------------------
+DEMO
+1 - ler a classe main
+2 - ler o SoarBridge
+3 - como os dados sensoriais são enviados para o SOAR
+4 - como os dados são recebidos pelo
+5 - ver as regras do soar
+
+entregas
+1 - modo comer
+2 - modo pegar joia do leaflet proxima
+3 - trocar as joias por pontos no delivery spot
+
+**LASTSAVE**
+    voce propos o move food, mas calcular a distancia deixou ele meio esquisito
+    a ideia então é no estado original propor colocar a distancia de todos
+    talvez tu possa passar a memory pro original e calcular as distancias lá
+    ***obs tu tem q lembrar de recalcular essas distancias de alguma forma quando
+    andar***

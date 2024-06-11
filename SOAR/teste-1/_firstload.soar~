@@ -1,0 +1,9 @@
+sp{criar*estados
+   (state <s> ^jug <j1>
+              ^jug <j2>)
+   (<j1> ^volume 5
+         ^contents 0
+         ^empty 5)
+   (<j2> ^volume 3
+         ^contents 0
+         ^empty 5)

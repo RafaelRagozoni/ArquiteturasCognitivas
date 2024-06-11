@@ -1,0 +1,1567 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>Clarion.Framework Namespace</title>
+    <meta name="Language" content="en-us" />
+    <meta name="System.Keywords" content="Clarion.Framework namespace" />
+    <meta name="Microsoft.Help.F1" content="Clarion.Framework" />
+    <meta name="Microsoft.Help.Id" content="N:Clarion.Framework" />
+    <meta name="Description" content="Contains the majority of the classes needed for initializing both the world and the agents within the world. Most of the classes contained within this namespace can be correlated directly to terms or concepts from the CLARION theory" />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    <link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" />
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="Clarion.Framework" />
+    <meta name="file" content="ED05D26C" />
+    <meta name="guid" content="ED05D26C" />
+    <xml>
+      <MSHelp:Attr Name="AssetID" Value="N:Clarion.Framework" />
+      <MSHelp:TOCTitle Title="Clarion.Framework Namespace" />
+      <MSHelp:RLTitle Title="Clarion.Framework Namespace ()" />
+      <MSHelp:Keyword Index="A" Term="N:Clarion.Framework" />
+      <MSHelp:Keyword Index="A" Term="frlrfClarionFramework" />
+      <MSHelp:Keyword Index="K" Term="Clarion.Framework namespace" />
+      <MSHelp:Keyword Index="F" Term="Clarion.Framework" />
+      <MSHelp:Attr Name="HelpPriority" Value="1" />
+      <MSHelp:Attr Name="DevLang" Value="CSharp" />
+      <MSHelp:Attr Name="Locale" Value="en-us" />
+      <MSHelp:Attr Name="TopicType" Value="kbSyntax" />
+      <MSHelp:Attr Name="TopicType" Value="apiref" />
+      <MSHelp:Attr Name="Abstract" Value="Contains the majority of the classes needed for initializing both the world and the agents within the world. Most of the classes contained within this namespace can be correlated directly to terms or concepts from the CLARION theory" />
+    </xml>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="CSharpCheckbox">C#</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">Clarion Library 6.1.1</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">Clarion.Framework Namespace</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <span id="headfeedbackarea" class="feedbackhead">
+              <a href="javascript:SubmitFeedback('clarion.support@gmail.com','Clarion Library 6.1.1','','','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">Send Feedback</a>
+            </span>
+          </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" background="../icons/gradient.gif" />
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray">
+          <p style="color: #dc143c; font-size: 8.5pt; font-weight: bold;">[This is preliminary documentation and is subject to change.]</p>
+        </span>
+        <div class="summary">Contains the majority of the classes needed for initializing both the world and the agents within the world. Most of the classes contained within this namespace can be correlated directly to terms or concepts from the CLARION theory</div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(classToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(classToggle, event)" tabindex="0">
+            <img id="classToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Classes</span>
+        </h1>
+        <div id="classSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Class</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3FC13AAE.htm">ActionCenteredSubsystem</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements the Action Centered Subsystem (ACS) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4C062580.htm">ActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ActionCenteredSubsystemParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is parameters class for the <a href="3FC13AAE.htm">ActionCenteredSubsystem</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F3A3CAB0.htm">ActivationCollection</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="62DE5911.htm">AffiliationBelongingnessDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an affiliation and belongingness drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="FDE8304B.htm">AffiliationBelongingnessDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AffiliationBelongingnessDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating an affiliation and belongingness drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4B20B263.htm">AffiliationBelongingnessDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AffiliationBelongingnessDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="62DE5911.htm">AffiliationBelongingnessDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="772A16CE.htm">Agent</a>
+              </td>
+              <td>
+                <div class="summary">
+             This class implements an agent within the Clarion Library
+             </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7900591F.htm">Agent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AgentParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="772A16CE.htm">Agent</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="314682B3.htm">AutonomyDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an autonomy drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BD34F763.htm">AutonomyDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AutonomyDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating an autonomy drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4DF5E4BB.htm">AutonomyDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AutonomyDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="314682B3.htm">AutonomyDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9A9F5E85.htm">AvoidingPhysicalDangerDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an avoiding physical danger drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="91CDA965.htm">AvoidingPhysicalDangerDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AvoidingPhysicalDangerDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating an avoiding physical danger drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9193B170.htm">AvoidingPhysicalDangerDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AvoidingPhysicalDangerDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="9A9F5E85.htm">AvoidingPhysicalDangerDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="568BCC48.htm">AvoidingUnpleasantStimuliDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an avoiding unpleasant stimuli drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F07D844B.htm">AvoidingUnpleasantStimuliDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AvoidingUnpleasantStimuliDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating an avoiding unpleasant stimuli drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="56C48748.htm">AvoidingUnpleasantStimuliDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>AvoidingUnpleasantStimuliDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="568BCC48.htm">AvoidingUnpleasantStimuliDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="ADC69C2F.htm">BPNetwork</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a 3-layer backpropagation neural network in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D66A5A12.htm">BPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>BPNetworkFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating 3-layer backpropagation neural networks
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4578431C.htm">BPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>BPNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="ADC69C2F.htm">BPNetwork</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AE9B598E.htm">ConservationDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a conservation drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F46220BD.htm">ConservationDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ConservationDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a conservation drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="8E249A5.htm">ConservationDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ConservationDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="AE9B598E.htm">ConservationDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D206C351.htm">CuriosityDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a curiosity drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="68B3E7A8.htm">CuriosityDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>CuriosityDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a curiosity drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DD369FC1.htm">CuriosityDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>CuriosityDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="D206C351.htm">CuriosityDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="62E3E2B1.htm">DeclarativeChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="61BF6B0A.htm">DeferenceDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a deference drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4382C2FE.htm">DeferenceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DeferenceDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a deference drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="30BAC643.htm">DeferenceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DeferenceDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="61BF6B0A.htm">DeferenceDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="14BFC1A1.htm">DimensionValuePair</a>
+              </td>
+              <td>
+                <div class="summary">
+            Implements a dimension-value pair within Clarion by specifying the IDs of the dimension and value.
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="E5B8F551.htm">DimensionValuePair<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>dType, vType<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td>
+                <div class="summary">
+            Implements a dimension-value pair within Clarion by specifying the IDs of the dimension and value.
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3948CC55.htm">DistributedDimensionValuePair<span class="languageSpecificText"><span class="cs">&lt;</span><span class="vb">(Of </span><span class="cpp">&lt;</span><span class="nu">(</span><span class="fs">&lt;'</span></span>vType<span class="languageSpecificText"><span class="cs">&gt;</span><span class="vb">)</span><span class="cpp">&gt;</span><span class="nu">)</span><span class="fs">&gt;</span></span></a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C22EA27E.htm">DominancePowerDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a dominance and power drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="76EDDD9.htm">DominancePowerDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DominancePowerDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a dominance and power drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A869DB59.htm">DominancePowerDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DominancePowerDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="C22EA27E.htm">DominancePowerDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6F70C434.htm">Episode</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BB0E7988.htm">ExternalActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A2F79649.htm">FairnessDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a fairness drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BC88E5C0.htm">FairnessDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FairnessDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a fairness drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AD477A7F.htm">FairnessDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FairnessDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="A2F79649.htm">FairnessDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="901E4572.htm">FixedAssociativeRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a fixed associative rule in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="454C4C7F.htm">FixedAssociativeRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FixedAssociativeRuleFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory for generating fixed associative rules
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="5E900DC2.htm">FixedAssociativeRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FixedAssociativeRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class the <a href="901E4572.htm">FixedAssociativeRule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="12588789.htm">FixedRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a fixed rule in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="21AE00C5.htm">FixedRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FixedRuleFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory for generating fixed rules
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AA8B6717.htm">FixedRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FixedRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class the <a href="12588789.htm">FixedRule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A87E2A7E.htm">FoodDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a food drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3215541E.htm">FoodDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FoodDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a food drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F3ECCC9C.htm">FoodDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>FoodDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="A87E2A7E.htm">FoodDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C25ECDC6.htm">GeneralKnowledgeStore</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="2D93E536.htm">GoalChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="957C1A54.htm">GoalStructure</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DB932B74.htm">GoalStructureUpdateActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9248E807.htm">HonorDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an honor drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6786DE04.htm">HonorDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>HonorDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating an honor drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="76B5B36C.htm">HonorDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>HonorDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="9248E807.htm">HonorDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C5114D17.htm">HopfieldNetwork</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D93CDD6B.htm">HopfieldNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>HopfieldNetworkFactory</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="32170597.htm">HopfieldNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>HopfieldNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="C5114D17.htm">HopfieldNetwork</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4AA974FD.htm">InputOutputLayer</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="25CFA9E7.htm">IRLRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements an IRL rule in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3DCF98A3.htm">IRLRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>IRLRuleFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating IRL rules
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="51F119BB.htm">IRLRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>IRLRuleParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class the <a href="25CFA9E7.htm">IRLRule</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="448A9AE9.htm">MetaCognitiveSubsystem</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements the Meta Cognitive Subsystem (MCS) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C5C9611D.htm">MotivationalSubsystem</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements the Motivational Subsystem (MS) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="15A5BE78.htm">MotivationalSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>MotivationalSubsystemParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is parameters class for the <a href="C5C9611D.htm">MotivationalSubsystem</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="133A3D4D.htm">NonActionCenteredSubsystem</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements the Non Action Centered Subsystem (NACS) in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="886135A0.htm">NonActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>NonActionCenteredSubsystemParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is parameters class for the <a href="133A3D4D.htm">NonActionCenteredSubsystem</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3786816D.htm">NurturanceDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a nurturance drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BBF46942.htm">NurturanceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>NurturanceDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a nurturance drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="BD33C46F.htm">NurturanceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>NurturanceDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="3786816D.htm">NurturanceDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="C02EAAF7.htm">ParameterChangeActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="DCCC3B9D.htm">QBPNetwork</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a Q-learning with backpropagation neural network in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7402183.htm">QBPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>QBPNetworkFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating Q-learning backpropagation neural networks
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="CF6CEFB1.htm">QBPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>QBPNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="DCCC3B9D.htm">QBPNetwork</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A791543E.htm">ReasoningRequestActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F1B27A30.htm">RecognitionAchievementDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a recognition and achievement drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="96BF64D5.htm">RecognitionAchievementDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognitionAchievementDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a recognition and achievement drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="6DE1118C.htm">RecognitionAchievementDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognitionAchievementDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="F1B27A30.htm">RecognitionAchievementDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4123A3CE.htm">RefineableActionRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a refineable action rule in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="203BC08.htm">RefineableActionRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RefineableActionRuleFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating refineable action rules
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AB25ED59.htm">RefineableAssociativeRule</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a refineable associative rule in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="95E6115C.htm">RefineableAssociativeRule<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RefineableAssociativeRuleFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory for generating refineable associative rules
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="4BC0F9A.htm">ReproductionDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a reproduction drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="FC0C1B0E.htm">ReproductionDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ReproductionDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a reproduction drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="2B71BCB9.htm">ReproductionDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>ReproductionDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="4BC0F9A.htm">ReproductionDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="9A89547E.htm">RestDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a rest drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="115E7075.htm">RestDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RestDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a rest drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="235325BF.htm">RestDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RestDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="9A89547E.htm">RestDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="D4EA5670.htm">RetrieveRequestActionChunk</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="A8660111.htm">SensoryInformation</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="F526E06C.htm">SimilanceDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a similance drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3C618F03.htm">SimilanceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SimilanceDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a similance drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="30F80BAD.htm">SimilanceDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SimilanceDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="F526E06C.htm">SimilanceDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="3951969.htm">SimplifiedQBPNetwork</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a simplified Q-learning with backpropagation neural network in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AF0B0B7D.htm">SimplifiedQBPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SimplifiedQBPNetworkFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating simplified Q-learning backpropagation neural networks
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="AA6A7D0.htm">SimplifiedQBPNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>SimplifiedQBPNetworkParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="3951969.htm">SimplifiedQBPNetwork</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="28F0E15E.htm">WaterDrive</a>
+              </td>
+              <td>
+                <div class="summary">
+            This class implements a water drive in the Clarion Library
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="CCDC4282.htm">WaterDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>WaterDriveFactory</a>
+              </td>
+              <td>
+                <div class="summary">
+            The factory class for generating a water drive
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="65840A22.htm">WaterDrive<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>WaterDriveParameters</a>
+              </td>
+              <td>
+                <div class="summary">
+            This is the parameters class for the <a href="28F0E15E.htm">WaterDrive</a> class
+            </div>
+              </td>
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="2949A420.htm">WorkingMemory</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="class; public">
+              <td>
+                <img src="../icons/pubclass.gif" alt="Public class" title="Public class" />
+              </td>
+              <td>
+                <a href="7820D3B5.htm">WorkingMemoryUpdateActionChunk</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+        <h1 class="heading">
+          <span onclick="ExpandCollapse(enumerationToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(enumerationToggle, event)" tabindex="0">
+            <img id="enumerationToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Enumerations</span>
+        </h1>
+        <div id="enumerationSection" class="section" name="collapseableSection" style="">
+          <table id="typeList" class="members" frame="lhs" cellpadding="2">
+            <col width="10%" />
+            <tr>
+              <th class="iconColumn">
+           
+       </th>
+              <th class="nameColumn">Enumeration</th>
+              <th class="descriptionColumn">Description</th>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="5DE0BB0E.htm">ActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>LevelSelectionMethods</a>
+              </td>
+              <td>
+                <div class="summary">
+            The various methods that can be used for level selection (such as stochastic or combined)
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="624C37A4.htm">ActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>LevelSelectionOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The options for level selection (such as fixed or variable)
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="EDC17167.htm">ActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>MetaInfoReservations</a>
+              </td>
+              <td>
+                <div class="summary">
+            The meta-info reservations for the action-centered subsystem
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="93CFA207.htm">Agent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>InternalContainers</a>
+              </td>
+              <td>
+                <div class="summary">
+            The list of internal "containers" in which <a href="B4EB88B3.htm">ICommitable</a> (i.e., functional) objects are
+            stored within the agent
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="74BDD6C2.htm">Agent<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>InternalWorldObjectContainers</a>
+              </td>
+              <td>
+                <div class="summary">
+            The list of internal "containers" in which <a href="3EC3A6EC.htm">IWorldObject</a> (i.e., descriptive) knowledge is
+            stored within the agent
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="3C79BD98.htm">GoalStructure<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognizedActions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="DC4493FA.htm">HopfieldNetwork<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>TransmissionOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The options available for transmitting activation through the network
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="A36CAC5A.htm">MotivationalSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>CurrentGoalActivationOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The activation options for the current goal
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="E2CF8E8C.htm">MotivationalSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>DriveSystemSpecifications</a>
+              </td>
+              <td>
+                <div class="summary">
+            The types of groups in which a drive may belong
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="1606A5EF.htm">MotivationalSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>GoalStructureBehaviorOptions</a>
+              </td>
+              <td>
+                <div class="summary">
+            The options under which the goal structure can be made to behave
+            </div>
+              </td>
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="87B8DB2B.htm">NonActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognizedReasoningActions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="9BBCB18.htm">NonActionCenteredSubsystem<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognizedRetrieveActions</a>
+              </td>
+              <td />
+            </tr>
+            <tr data="enumeration; public">
+              <td>
+                <img src="../icons/pubenumeration.gif" alt="Public enumeration" title="Public enumeration" />
+              </td>
+              <td>
+                <a href="144E6104.htm">WorkingMemory<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>RecognizedActions</a>
+              </td>
+              <td />
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+        <p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:clarion.support%40gmail.com?Subject=Clarion Library 6.1.1">clarion.support@gmail.com</a><script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script><p />© (2013) Nicholas Wilson</div>
+    </div>
+  </body>
+</html>

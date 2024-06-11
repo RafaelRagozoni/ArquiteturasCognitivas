@@ -1,0 +1,3 @@
+pushd teste-1
+source teste-1_source.soar
+popd

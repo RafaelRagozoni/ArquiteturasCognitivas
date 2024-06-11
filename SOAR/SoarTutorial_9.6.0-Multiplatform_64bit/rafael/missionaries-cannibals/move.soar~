@@ -1,0 +1,13 @@
+sp {apply*move-mac-boat*one*cannibal
+   (state <s> ^operator <o>)
+   (<o> ^name move-mac-boat
+        ^{ << cannibals missionaires boat >> <type> } <number>
+        ^bank <bank>)
+   (<bank> ^<type> <bank-num>
+           ^other-bank <obank>)
+   (<obank> ^<type> <obank-num>)
+-->
+   (<bank> ^<type> <bank-num> -
+                      (- <bank-num> <number>))
+   (<obank> ^<type> <obank-num> -
+                       (+ <obank-num> <number>))}

@@ -1,0 +1,45 @@
+# Propose*move-north:
+# If I exist, then propose the move-north operator.
+#   (state <s> ^type state
+#              ^io <io>)
+#   (<io> ^input-link <il>)
+#   (<il> ^my-location <ml>)
+#   (<ml> ^<direction> <cell>)
+#   (<cell> ^content { <content> <> wall })
+
+sp {propose*move
+   (state <s> ^io.input-link.my-location.<dir>.content
+              { <content> <> wall })
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name move
+        ^direction <dir>
+        ^content <content>)}
+
+# Apply*move-north:
+# If the move-north operator is selected, then generate an output command to 
+# move north.
+
+sp {apply*move
+   (state <s> ^operator <o>
+              ^io <io>)
+   (<io> ^output-link <ol>)
+   (<o> ^name move)
+   (<o> ^direction <dir>)
+-->
+   (<ol> ^move <move>)
+   (<move> ^direction <dir>)}
+
+# remove*move-north:
+# Se tem um move completo no output-link remove ele da lista de operações 
+
+sp {remove*move
+   (state <s> ^operator <o>
+              ^io <io>)
+   (<o> ^name move)
+   (<io> ^output-link <ol>)
+   (<ol> ^move <direction>)
+   (<direction> ^status complete)
+-->
+   (<ol> ^move <direction> -)}
+

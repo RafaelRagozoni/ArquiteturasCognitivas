@@ -1,0 +1,53 @@
+{
+  "format": 1,
+  "restore": {
+    "/app/folder1/folder1.csproj": {}
+  },
+  "projects": {
+    "/app/folder1/folder1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/app/folder1/folder1.csproj",
+        "projectName": "folder1",
+        "projectPath": "/app/folder1/folder1.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/app/folder1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net481"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net481": {
+            "targetAlias": "net481",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net481": {
+          "targetAlias": "net481",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.421/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

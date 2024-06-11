@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="ClarionDEMO/ClarionDEMO.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ClarionDEMO/Mind.cs">
+    <Files>
+      <File FileName="ClarionDEMO/ClarionAgent.cs" Line="267" Column="98" />
+      <File FileName="ClarionDEMO/WorldServer.cs" Line="1057" Column="57" />
+      <File FileName="ClarionDEMO/Main.cs" Line="38" Column="92" />
+      <File FileName="ClarionDEMO/Mind.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="9" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="11" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="12" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="13" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="14" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="15" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="17" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="18" column="1" />
+      <Breakpoint file="/net/nfs1.fee.unicamp.br/export/vol1/home/DCA/gudwin/IA006/2016/ClarionDEMO/ClarionDEMO/ClarionDEMO/gtk-gui/ClarionSimulation.Mind.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

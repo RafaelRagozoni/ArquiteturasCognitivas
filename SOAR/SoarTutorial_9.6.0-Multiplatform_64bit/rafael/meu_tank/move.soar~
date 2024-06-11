@@ -1,0 +1,22 @@
+sp {meu_tank*propose*move
+   (state <s> ^name meu_tank
+              ^io <io>)
+   (<io> ^input-link <il>)
+   (<il> ^blocked <blocked>)
+   (<blocked> ^forward no)
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name move
+         ^actions.move.direction forward)}
+
+
+sp {meu_tank*add*radar-off*move
+   (state <s> ^name meu_tank
+              ^operator <o>
+              ^io.input-link <il>)
+   (<il> ^radar-status on
+        -^radar.<< energy health missiles tank >>)
+   (<o> ^name << turn move >>
+        ^actions <a>)
+-->
+   (<a> ^radar.switch off)}

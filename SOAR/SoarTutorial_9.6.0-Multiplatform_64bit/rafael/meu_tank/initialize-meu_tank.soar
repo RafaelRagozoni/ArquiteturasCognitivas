@@ -1,0 +1,15 @@
+sp {propose*initialize-meu_tank
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-meu_tank)
+}
+
+sp {apply*initialize-meu_tank
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-meu_tank)
+-->
+   (<s> ^name meu_tank)
+}
+

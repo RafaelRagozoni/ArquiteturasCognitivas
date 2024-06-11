@@ -1,0 +1,3 @@
+source elaborations.soar
+source failure.soar
+source goal.soar

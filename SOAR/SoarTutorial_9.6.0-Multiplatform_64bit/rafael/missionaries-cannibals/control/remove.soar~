@@ -1,0 +1,8 @@
+sp {mac*apply*move-mac-boat*remove*old*last-operator
+   (state <s> ^name mac
+              ^operator <o>
+              ^<lr-bank>.other-bank <o-bank>
+              ^last-operator <lo>)
+   (<lo> ^bank <o-bank>)
+-->
+   (<s> ^last-operator <lo> -)}

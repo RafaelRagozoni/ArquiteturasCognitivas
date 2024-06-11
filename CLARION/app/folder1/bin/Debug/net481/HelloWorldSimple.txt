@@ -1,0 +1,19 @@
+Reporting Results for the Simple Hello World Task
+John got 9758 correct out of 10000 trials (98%)
+At the end of the task, John had learned the following rules:
+Condition:
+	Dimension Salutation, Weight = 1
+		(Dimension = Salutation, Value = Hello) Setting = True,
+		(Dimension = Salutation, Value = Goodbye) Setting = False
+Action:
+	ExternalActionChunk Hello:
+		 Dimension SemanticLabel, Weight = 1
+			(Dimension = SemanticLabel, Value = Hello)
+Condition:
+	Dimension Salutation, Weight = 1
+		(Dimension = Salutation, Value = Hello) Setting = False,
+		(Dimension = Salutation, Value = Goodbye) Setting = True
+Action:
+	ExternalActionChunk Goodbye:
+		 Dimension SemanticLabel, Weight = 1
+			(Dimension = SemanticLabel, Value = Goodbye)

@@ -1,0 +1,5 @@
+source elaborations.soar
+source not_fail.soar
+source record-last-op.soar
+source redo.soar
+source remove.soar

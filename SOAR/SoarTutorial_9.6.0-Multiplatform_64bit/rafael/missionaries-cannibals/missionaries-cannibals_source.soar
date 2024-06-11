@@ -1,0 +1,28 @@
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source control.soar
+pushd control
+source control_source.soar
+popd
+source detects.soar
+pushd detects
+source detects_source.soar
+popd
+source initialize-missionaries-cannibals.soar
+pushd initialize-missionaries-cannibals
+source initialize-missionaries-cannibals_source.soar
+popd
+source monitor.soar
+source move.soar
+pushd move
+source move_source.soar
+popd
+source selection.soar
+pushd selection
+source selection_source.soar
+popd

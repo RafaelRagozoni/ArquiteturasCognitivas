@@ -1,0 +1,37 @@
+sp {meu_tank*propose*turn-left
+   (state <s> ^name meu_tank
+              ^io.input-link.blocked <b>)
+   (<b> ^forward yes
+        ^left no)
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name turn
+         ^actions <a>)
+   (<a> ^rotate.direction left
+        ^radar.switch on
+        ^radar-power.setting 13)
+}
+
+sp {meu_tank*propose*turn-right
+   (state <s> ^name meu_tank
+              ^io.input-link.blocked <b>)
+   (<b> ^forward yes
+        ^left no)
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name turn
+         ^actions <a>)
+   (<a> ^rotate.direction left
+        ^radar.switch on
+        ^radar-power.setting 13)
+}
+
+sp {meu_tank*propose*turn*back
+   (state <s> ^name meu_tank
+              ^io.input-link.blocked <b>)
+   (<b> ^forward yes ^left yes ^right yes)
+-->
+   (<s> ^operator <op> + =)
+   (<op> ^name turn
+         ^actions.rotate.direction left)
+}

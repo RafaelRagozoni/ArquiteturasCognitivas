@@ -1,0 +1,12 @@
+sp {mac*propose*operator*move-mac-boat2
+   (state <s> ^name mac
+              ^ << right-bank left-bank >> <bank>)
+   (<bank> ^{ << cannibals missionaries >> <type> } > 1
+           ^boat 1)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name move-mac-boat
+        ^bank <bank>
+        ^<type> 2
+        ^boat 1
+        ^types 1)}

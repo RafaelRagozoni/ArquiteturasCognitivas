@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3yiJb0UHosorjeG4D6c1HefgZzC5w1SULSxWNzg9WWbqjLAqsgOpaw87BxJuCCYyILoYyGUlfQOalNFazJqEGw==",
+  "success": true,
+  "projectFilePath": "/app/folder1/folder1.csproj",
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netframework.referenceassemblies.net48/1.0.2/microsoft.netframework.referenceassemblies.net48.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

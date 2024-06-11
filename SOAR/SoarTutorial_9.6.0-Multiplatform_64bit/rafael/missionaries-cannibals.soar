@@ -1,0 +1,3 @@
+pushd missionaries-cannibals
+source missionaries-cannibals_source.soar
+popd

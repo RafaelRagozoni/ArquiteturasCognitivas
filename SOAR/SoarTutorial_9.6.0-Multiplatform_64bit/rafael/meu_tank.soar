@@ -1,0 +1,3 @@
+pushd meu_tank
+source meu_tank_source.soar
+popd

@@ -1,0 +1,18 @@
+sp {detect*fail
+   (state <s> ^name mac
+              ^desired <d>
+              ^ << right-bank left-bank >> <side> )
+   (<side> ^missionaries {  <n> > 0 } 
+           ^cannibals > <n>)
+-->
+   (<s> ^failure <d>)}
+
+sp {detect*fail-boat
+   (state <s> ^name mac
+              ^desired <d>
+              ^ << right-bank left-bank >> <side> )
+   (<side> ^missionaries 0  
+           ^cannibals 0 
+           ^boat 1)
+--> 
+   (<s> ^failure <d>)}

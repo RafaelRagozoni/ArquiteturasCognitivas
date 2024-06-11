@@ -1,0 +1,12 @@
+sp {propose*organize*needed*jewels
+   (state <s> ^io.input-link <il>)
+   (<s> ^CREATURE <creature>)
+   (<creature> ^LEAFLETS.JEWELS <JEWELS>)
+   (<JEWELS> ^<cor> <jewel1>)
+   (<JEWELS> ^<cor> <jewel2> {<> <jewel1> <jewel2>})
+-->
+   (<s> ^operator <o> + >)
+   (<o> ^name organizeJewels)
+   (<o> ^cor <cor>)
+   (<o> ^value <jewel1> + <jewel2>)
+}
