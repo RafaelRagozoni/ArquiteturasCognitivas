@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.14
+Created-By: 18.0.2-ea+9-Ubuntu-222.04 (Private Build)
+Trusted-Library: true
+Codebase: /home/rafael/Pos/UNICAMP/alunoEspecial/arquiteturaCognitiva/
+ LIDA/DemoLIDA/dist
+Application-Library-Allowable-Codebase: /home/rafael/Pos/UNICAMP/aluno
+ Especial/arquiteturaCognitiva/LIDA/DemoLIDA/dist
+Caller-Allowable-Codebase: /home/rafael/Pos/UNICAMP/alunoEspecial/arqu
+ iteturaCognitiva/LIDA/DemoLIDA/dist
+Permissions: all-permissions
+Application-Name: DemoLIDA
+

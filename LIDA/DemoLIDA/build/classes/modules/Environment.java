@@ -11,6 +11,10 @@ import ws3dproxy.model.Leaflet;
 import ws3dproxy.model.Thing;
 import ws3dproxy.model.World;
 import ws3dproxy.util.Constants;
+import edu.memphis.ccrg.lida.framework.tasks.TaskManager;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 public class Environment extends EnvironmentImpl {
 
@@ -23,6 +27,8 @@ public class Environment extends EnvironmentImpl {
     private List<Thing> thingAhead;
     private Thing leafletJewel;
     private String currentAction;   
+    private static final Logger logger = Logger.getLogger(Environment.class.getCanonicalName());
+
     
     public Environment() {
         this.ticksPerRun = DEFAULT_TICKS_PER_RUN;
@@ -142,6 +148,8 @@ public class Environment extends EnvironmentImpl {
     public void processAction(Object action) {
         String actionName = (String) action;
         currentAction = actionName.substring(actionName.indexOf(".") + 1);
+        System.out.println(actionName);
+        logger.log(Level.INFO, "actionName", TaskManager.getCurrentTick());
     }
 
     private void performAction(String currentAction) {

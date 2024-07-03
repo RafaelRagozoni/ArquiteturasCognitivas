@@ -11,6 +11,10 @@ import ws3dproxy.model.Leaflet;
 import ws3dproxy.model.Thing;
 import ws3dproxy.model.World;
 import ws3dproxy.util.Constants;
+import edu.memphis.ccrg.lida.framework.tasks.TaskManager;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 public class Environment extends EnvironmentImpl {
 
@@ -23,6 +27,8 @@ public class Environment extends EnvironmentImpl {
     private List<Thing> thingAhead;
     private Thing leafletJewel;
     private String currentAction;   
+    private static final Logger logger = Logger.getLogger(Environment.class.getCanonicalName());
+
     
     public Environment() {
         this.ticksPerRun = DEFAULT_TICKS_PER_RUN;
@@ -142,7 +148,8 @@ public class Environment extends EnvironmentImpl {
     public void processAction(Object action) {
         String actionName = (String) action;
         currentAction = actionName.substring(actionName.indexOf(".") + 1);
-        
+        System.out.println(actionName);
+        logger.log(Level.INFO, "actionName", TaskManager.getCurrentTick());
     }
 
     private void performAction(String currentAction) {
@@ -150,12 +157,13 @@ public class Environment extends EnvironmentImpl {
             //System.out.println("Action: "+currentAction);
             switch (currentAction) {
                 case "rotate":
-                    creature.rotate(1.0);
+                    // creature.rotate(1.0);
+                    creature.move(1.0,0,0);
                     //CommandUtility.sendSetTurn(creature.getIndex(), -1.0, -1.0, 3.0);
                     break;
                 case "gotoFood":
                     if (food != null) 
-                        creature.moveto(3.0, food.getX1(), food.getY1());
+                        creature.moveto(0.0, food.getX1(), food.getY1());
                         //CommandUtility.sendGoTo(creature.getIndex(), 3.0, 3.0, food.getX1(), food.getY1());
                     break;
                 case "gotoJewel":
