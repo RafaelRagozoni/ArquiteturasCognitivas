@@ -1,0 +1,8 @@
+/app/ClarionApp/obj/x86/Release/ClarionApp.csproj.AssemblyReference.cache
+/app/ClarionApp/obj/x86/Release/ClarionApp.csproj.CoreCompileInputs.cache
+/app/ClarionApp/obj/x86/Release/ClarionApp.exe
+/app/ClarionApp/bin/Release/ClarionApp.exe
+/app/ClarionApp/bin/Release/ClarionApp.pdb
+/app/ClarionApp/bin/Release/ClarionLibrary.dll
+/app/ClarionApp/obj/x86/Release/ClarionApp.csproj.CopyComplete
+/app/ClarionApp/obj/x86/Release/ClarionApp.pdb

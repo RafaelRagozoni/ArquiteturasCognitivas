@@ -17,6 +17,8 @@ namespace ClarionApp
 		public int[] leaflet1 = new int[6];
 		public int[] leaflet2 = new int[6];
 		public int[] leaflet3 = new int[6];
+		public Boolean[] leafletsCompletion = new Boolean[3]; 
+		public Boolean[] leafletsDelivered = new Boolean[3]; 
 
 		public MindViewer () : base(Gtk.WindowType.Toplevel)
 		{
@@ -49,29 +51,83 @@ namespace ClarionApp
 			//update();
 		}
 
+		public void updateLeafletCompletion(int n){
+			switch(n){
+				case 0:
+					if (leaflet1[0] <= red
+					&& leaflet1[1] <= green
+					&& leaflet1[2] <= blue
+					&& leaflet1[3] <= yellow
+					&& leaflet1[4] <= magenta
+					&& leaflet1[5] <= white
+					){
+						leafletsCompletion[0] = true;
+					}
+					break;
+				case 1:
+					if (leaflet2[0] <= red
+					&& leaflet2[1] <= green
+					&& leaflet2[2] <= blue
+					&& leaflet2[3] <= yellow
+					&& leaflet2[4] <= magenta
+					&& leaflet2[5] <= white
+					){
+						leafletsCompletion[1] = true;
+					}
+					break;
+				case 2:
+					if (leaflet3[0] <= red
+					&& leaflet3[1] <= green
+					&& leaflet3[2] <= blue
+					&& leaflet3[3] <= yellow
+					&& leaflet3[4] <= magenta
+					&& leaflet3[5] <= white
+					){
+						leafletsCompletion[2] = true;
+					}
+					break;
+			}
+		}
+
+		public bool canDeliverSomething()
+		{
+			foreach (bool value in leafletsCompletion)
+			{
+				if (value)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+
 		public void updateLeaflet(int n, Leaflet l) {
 			switch(n) {
-			    case 0: leaflet1[0] = l.getRequired("Red");
-				        leaflet1[1] = l.getRequired("Green");
-				        leaflet1[2] = l.getRequired("Blue");
-				        leaflet1[3] = l.getRequired("Yellow");
-				        leaflet1[4] = l.getRequired("Magenta");
-				        leaflet1[5] = l.getRequired("White");
-				        break;
-			    case 1: leaflet2[0] = l.getRequired("Red");
-				        leaflet2[1] = l.getRequired("Green");
-				        leaflet2[2] = l.getRequired("Blue");
-				        leaflet2[3] = l.getRequired("Yellow");
-				        leaflet2[4] = l.getRequired("Magenta");
-				        leaflet2[5] = l.getRequired("White");
-				        break;	
-			    case 2: leaflet3[0] = l.getRequired("Red");
-				        leaflet3[1] = l.getRequired("Green");
-				        leaflet3[2] = l.getRequired("Blue");
-				        leaflet3[3] = l.getRequired("Yellow");
-				        leaflet3[4] = l.getRequired("Magenta");
-				        leaflet3[5] = l.getRequired("White");
-				        break;
+			    case 0:
+					// if (leafletsCompletion[n]) break;
+					leaflet1[0] = l.getRequired("Red");
+					leaflet1[1] = l.getRequired("Green");
+					leaflet1[2] = l.getRequired("Blue");
+					leaflet1[3] = l.getRequired("Yellow");
+					leaflet1[4] = l.getRequired("Magenta");
+					leaflet1[5] = l.getRequired("White");
+					break;
+			    case 1: 
+					leaflet2[0] = l.getRequired("Red");
+					leaflet2[1] = l.getRequired("Green");
+					leaflet2[2] = l.getRequired("Blue");
+					leaflet2[3] = l.getRequired("Yellow");
+					leaflet2[4] = l.getRequired("Magenta");
+					leaflet2[5] = l.getRequired("White");
+					break;	
+			    case 2: 
+					leaflet3[0] = l.getRequired("Red");
+					leaflet3[1] = l.getRequired("Green");
+					leaflet3[2] = l.getRequired("Blue");
+					leaflet3[3] = l.getRequired("Yellow");
+					leaflet3[4] = l.getRequired("Magenta");
+					leaflet3[5] = l.getRequired("White");
+					break;
 			    default: break;
 			}
 		}

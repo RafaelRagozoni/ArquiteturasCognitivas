@@ -33,5 +33,6 @@ RUN apt install apt-transport-https
 RUN apt update
 RUN apt install -y code # or code-insiders
 
-# COPY ./app /app
-# WORKDIR /app
+#GTK
+RUN apt-get install -y gtk-sharp2
+

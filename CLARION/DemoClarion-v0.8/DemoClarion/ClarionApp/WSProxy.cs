@@ -576,6 +576,45 @@ namespace ClarionApp
 			return response;
 		}
 
+
+        public string SendSetDeliverLeaflet(string creatureId,string leafletId)
+		{
+			String response = String.Empty;
+
+			try
+			{
+                StringBuilder builder = new StringBuilder();
+                builder.Append("deliver ");
+                builder.Append(creatureId);
+                builder.Append(" ");
+                builder.Append(leafletId);
+
+                // Send Message
+                SendMessage(builder.ToString());
+
+                // Read the response
+                response = ReadMessage();
+			}
+			catch (WorldServerConnectionError connEx)
+			{
+				throw connEx;
+			}
+			catch (WorldServerSendError sendEx)
+			{
+				throw sendEx;
+			}
+			catch (WorldServerReadError readEx)
+			{
+				throw readEx;
+			}
+			catch (Exception e)
+			{
+				throw new WorldServerSendError("Error while sending message", e);
+			}
+
+			return response;
+		}
+
 		/// <summary>
 		/// Send WorldReset Command
 		/// </summary>
@@ -915,6 +954,46 @@ namespace ClarionApp
                 }
 
                 return brickName;
+            }
+            catch (WorldServerConnectionError connEx)
+            {throw connEx; }
+            catch (WorldServerSendError sendEx)
+            {throw sendEx; }
+            catch (WorldServerReadError readEx)
+            {throw readEx;}
+            catch (Exception e)
+            {throw new WorldServerSendError("Error while sending message", e);}
+		}	
+
+        public string NewDeliverySpot(Int32 type, Int32 x, Int32 y)
+		{
+            String response = String.Empty;
+            String deliverySpotName = String.Empty;
+
+			try
+            {
+                // Prepare the message
+                StringBuilder builder = new StringBuilder();
+                builder.Append("newDeliverySpot ");
+                builder.Append(type);
+                builder.Append(" ");
+				builder.Append(x);
+                builder.Append(" ");
+                builder.Append(y);
+				
+                // Send Message
+                SendMessage(builder.ToString());
+
+                // Read the response
+                response = ReadMessage();
+
+                if (!String.IsNullOrWhiteSpace(response))
+                {
+                    string[] tokens = response.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    deliverySpotName = (tokens != null && tokens.Length > 1) ? tokens[1] : null;
+                }
+
+                return deliverySpotName;
             }
             catch (WorldServerConnectionError connEx)
             {throw connEx; }

@@ -9,12 +9,21 @@ services:
     shm_size: "8gb"
     environment:
       - FrameworkPathOverride=/lib/mono/4.8-api
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+
     network_mode: host
     ipc: host
+    ports:
+      - 8080:8080
     ulimits:
       stack: 67108864
       memlock: -1
     volumes:
-      - ./app/:/app
+      # - ./app/:/app
+      - ./DemoClarion-v0.8/DemoClarion/:/app
+      - /tmp/.X11-unix:/tmp/.X11-unix # Monta o socket do X11 do host no contêiner
 
-    command: sh -c  "msbuild /app/ && mono /app/folder1/bin/Debug/net481/folder1.exe"
+    # command: sh -c  "msbuild /app/ && mono /app/folder1/bin/Debug/net481/folder1.exe"
+    command: sh -c  "msbuild /app/ && mono /app/ClarionApp/bin/Release/ClarionApp.exe"
+    # command: sh -c  "msbuild /app/"

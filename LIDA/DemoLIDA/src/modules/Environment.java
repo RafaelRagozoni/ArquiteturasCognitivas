@@ -26,9 +26,9 @@ public class Environment extends EnvironmentImpl {
     private Thing jewel;
     private List<Thing> thingAhead;
     private Thing leafletJewel;
+    private Thing brick;
     private String currentAction;   
     private static final Logger logger = Logger.getLogger(Environment.class.getCanonicalName());
-
     
     public Environment() {
         this.ticksPerRun = DEFAULT_TICKS_PER_RUN;
@@ -36,6 +36,7 @@ public class Environment extends EnvironmentImpl {
         this.creature = null;
         this.food = null;
         this.jewel = null;
+        this.brick = null;
         this.thingAhead = new ArrayList<>();
         this.leafletJewel = null;
         this.currentAction = "rotate";
@@ -51,15 +52,23 @@ public class Environment extends EnvironmentImpl {
             System.out.println("Reseting the WS3D World ...");
             proxy.getWorld().reset();
             creature = proxy.createCreature(100, 100, 0);
-            creature.start();
             System.out.println("Starting the WS3D Resource Generator ... ");
+            World.createBrick(2, 120, 0, 160, 400);
+            // World.createBrick(3, 240, 200, 280, 600);
+            // World.createBrick(4, 400, 0, 440, 280);
+            // World.createBrick(4, 400, 400, 440, 600);
+            // World.createBrick(4, 520, 300, 560, 340);
+            // World.createBrick(4, 680, 200, 800, 400);
+            // World.createDeliverySpot
             World.grow(1);
             Thread.sleep(4000);
             creature.updateState();
+            creature.start();
             System.out.println("DemoLIDA has started...");
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     private class BackgroundTask extends FrameworkTaskImpl {
@@ -97,6 +106,9 @@ public class Environment extends EnvironmentImpl {
             case "leafletJewel":
                 requestedObject = leafletJewel;
                 break;
+            case "brick":
+                requestedObject = brick;
+                break;
             default:
                 break;
         }
@@ -109,6 +121,7 @@ public class Environment extends EnvironmentImpl {
         food = null;
         jewel = null;
         leafletJewel = null;
+        brick = null;
         thingAhead.clear();
                 
         for (Thing thing : creature.getThingsInVision()) {
@@ -138,7 +151,11 @@ public class Environment extends EnvironmentImpl {
                     // Identifica qualquer tipo de comida
                     food = thing;
             }
-           
+            //block
+            if (thing.getCategory() == Constants.categoryBRICK) {
+                    brick = thing;
+                    break;
+            }
         }
     }
     
@@ -148,7 +165,7 @@ public class Environment extends EnvironmentImpl {
     public void processAction(Object action) {
         String actionName = (String) action;
         currentAction = actionName.substring(actionName.indexOf(".") + 1);
-        System.out.println(actionName);
+        // System.out.println(actionName);
         logger.log(Level.INFO, "actionName", TaskManager.getCurrentTick());
     }
 
@@ -158,22 +175,19 @@ public class Environment extends EnvironmentImpl {
             switch (currentAction) {
                 case "rotate":
                     // creature.rotate(1.0);
-                    creature.move(1.0,0,0);
+                    creature.move(3.0,0,0);
                     //CommandUtility.sendSetTurn(creature.getIndex(), -1.0, -1.0, 3.0);
                     break;
                 case "gotoFood":
                     if (food != null) 
-                        creature.moveto(0.0, food.getX1(), food.getY1());
-                        //CommandUtility.sendGoTo(creature.getIndex(), 3.0, 3.0, food.getX1(), food.getY1());
+                        creature.moveto(3.0, food.getX1(), food.getY1());
                     break;
                 case "gotoJewel":
                     if (leafletJewel != null)
                         creature.moveto(3.0, leafletJewel.getX1(), leafletJewel.getY1());
-                        //CommandUtility.sendGoTo(creature.getIndex(), 3.0, 3.0, leafletJewel.getX1(), leafletJewel.getY1());
                     break;                    
                 case "get":
-                    creature.move(0.0, 0.0, 0.0);
-                    //CommandUtility.sendSetTurn(creature.getIndex(), 0.0, 0.0, 0.0);
+                    creature.move(0.0, 0.0, 0.0); //stop
                     if (thingAhead != null) {
                         for (Thing thing : thingAhead) {
                             if (thing.getCategory() == Constants.categoryJEWEL) {
